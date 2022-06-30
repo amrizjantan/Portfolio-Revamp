@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon-16x16.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.production.css">
+  <title>Amriz Jantan</title>
+</head> 
+
+
+<body>
+
+<!--NAVBAR-->
+  <header class="page-header">
+    <nav class="main-navigation page-header__item">
+      <div class="hamburger-div">
+        <button class="menu-toggle" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+      <ul role="menubar" class="navigation-list" id="nav-list">
+        <li role="presentation">
+          <a href="#home" role="menuitem"
+            class="navigation-list__item navigation-list__item--active">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="#about" role="menuitem" class="navigation-list__item">About</a>
+        </li>
+        <li role="presentation">
+          <a href="#projects" role="menuitem"
+            class="navigation-list__item">Projects</a>
+        </li>
+        <li role="presentation">  
+          <a href="#contact" role="menuitem"
+            class="navigation-list__item">Contact</a>
+        </li>
+      </ul>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-grid-alt"></i>
+      </div>
+      </nav>
+      </header>
+      
+
+  <!-- HOME -->
+  <section id="home">
+    <hr>
+    <div class="profile">
+      <div class="profile-text">
+        <h1> Hi, I'm <br>
+          Amriz Jantan</h1>
+        <h3> Full-Stack Developer </h3>
+      </div>
+      <img src="img/Amriz.jpg" class="profile__portrait"
+        alt="This is a picture of Art Vandelay">
+    </div>
+  </section>
+
+
+  <!-- About page; CV TO BE ADDED ! -->
+  <section id="about">
+    <div class="about-page">
+      <h1>About</h1>
+      <div class="about-info">
+        <p> Risk Analyst turned Co-Founder of a concept store, Fashion Designer and recently Developer.</p>
+      <!--  <a href="files/CVAmriz.jpg" class="about-button" download="">CV</a>-->
+      </div>
+    </div>
+  </section>
+
+   <!-- Technologies -->
+  <section id="technologies">
+    <div class="technologies">
+      <h1>Technologies</h1>
+    </div>
+    <div class="technologies-icons">
+      <img src="img/html-5.png" class="technologies-icons-html" alt="This is an icon of HTML">
+      <img src="img/css-3.png" class="technologies-icons-css" alt="This is an icon of CSS">
+      <img src="img/js.png" class="technologies-icons-javascript" alt="This is an icon of JavaScript">
+      <img src="img/nodejs.png" class="technologies-icons-nodejs" alt="This is an icon of NodeJS">
+      <img src="img/bootstrap.png" class="technologies-icons-bootstrap" alt="This is an icon of Bootstrap">
+      <img src="img/angular.png" class="technologies-icons-angular" alt="This is an icon of Angular">
+      <img src="img/react.png" class="technologies-icons-react" alt="This is an icon of React">
+       <img src="img/typescript_original_logo_icon_146317.png" class="technologies-icons-typescript" alt="This is an icon of TypeScript">
+    </div>
+  </section>
+
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="spacer-div"></div>
+    <h1>Projects</h1>
+    <div class="project-list">
+
+<div class="project-list__item">
+  <h2>Pokedex App</h2>
+  <img class="work" src="img/PokedexApp.png">
+  <p>
+  A web application built with HTML, CSS, and primarily JavaScript, which loads
+  data from an external API and enables the viewing of that data in detail.
+  </p>
+  <a href="https://amrizjantan.github.io/simple-js-app/" target="_blank"
+    class="project-list__item-link">
+    <button>Demo</button>
+  </a>
+  <a href="https://github.com/amrizjantan/simple-js-app/tree/main"
+    target="_blank" class="project-list__item-link">
+    <button>GitHub</button>
+  </a>
+</div>
+
+      <div class="project-list__item">
+  <h2>Meet App</h2>
+  <img class="work" src="img/MeetApp.png">
+  <p>
+  A serverless, progressive web application (PWA) built with React using a
+  test-driven development (TDD) technique. The application uses the Google
+  Calendar API to fetch upcoming events.
+  </p>
+  <a href="https://amrizjantan.github.io/meet/" target="_blank"
+    class="project-list__item-link">
+    <button>Demo</button>
+  </a>
+  <a href="https://github.com/amrizjantan/meet" target="_blank"
+    class="project-list__item-link">
+    <button>GitHub</button> 
+  </a>
+</div>
+
+<div class="project-list__item">
+  <h2>Chat App</h2>
+  <img class="work" src="img/ChatApp.png">
+  <p>
+  A chat app for mobile devices developed using React Native that uses Google's Firebase and GiftedChat.  It provides features
+  such as a chat interface and the ability to share images and location.
+  </p>
+  <a href="https://www.youtube.com/watch?v=DGy0TrIQ-qs" target="_blank"
+    class="project-list__item-link">
+    <button>Demo</button>
+  </a>
+  <a href="https://github.com/amrizjantan/hello-world" target="_blank"
+    class="project-list__item-link">
+    <button>GitHub</button>
+  </a>
+</div>
+
+<div class="project-list__item">
+  <h2>Movie API</h2>
+  <img class="work" src="img/MovieAPI.png">
+  <p>
+  This "MyFlix" API was built using the MERN stack. It includes HTTP with JWT passport authentication, bcrypt password hashing, express-validator for server-side input validation and CORS data security. It provides information about movies, directors, and genres.
+  </p>
+  <a href="https://github.com/amrizjantan/movie_api"
+    target="_blank" class="project-list__item-link">
+    <button>GitHub</button> 
+  </a>
+</div>
+
+<div class="project-list__item">
+  <h2>MyFlix </h2>
+  <img class="work" src="img/AmrizFlix.png">
+  <p>
+  This single-page, responsive application (SPA) was built using React is the client-side for an
+  application called "MyFlix" based on its existing server-side code (REST API and
+  database). Users may edit their profile and create a list of favorite movies.
+  </p>
+  <a href="https://amrizflix-client-app.netlify.app/" target="_blank"
+    class="project-list__item-link">
+    <button>Demo</button>
+  </a>
+  <a href="https://github.com/amrizjantan/myFlix-client/tree/redux" target="_blank"
+    class="project-list__item-link">
+    <button>GitHub</button>
+  </a>
+</div>
+
+<div class="project-list__item">
+  <h2>MyFlix-Angular</h2>
+  <img class="work" src="img/MyFlixAngular.png">
+  <p> 
+   MyFlix-Angular is a revisit of my previous "MyFlix" React app, but using Angular this time. It reads from the same dedicated API. Built using the previously created server-side code (REST API and database).
+  </p>
+  <a href="https://amrizjantan.github.io/myFlix-Angular-client/welcome" target="_blank"
+    class="project-list__item-link">
+    <button>Demo</button> 
+  </a>
+  <a href="https://github.com/amrizjantan/myFlix-Angular-client" target="_blank"
+    class="project-list__item-link">
+    <button>GitHub</button>
+  </a>
+</div>
+
+</div>
+</section>
+
+<!--Contact-->
+<section id="contact">
+  <div class="contact-page">
+    <div class="contact-title">
+      <h1>Contact</h1>
+    </div>
+    <div>
+      <p>
+        Amriz Jantan<br>
+        Hamburg + Berlin,  Germany<br>
+        <br>
+        Let's connect! <a
+          href="mailto:amrizjantan@gmail.com">amrizjantan@gmail.com</a><br>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+ <!-- Footer -->
+<footer class="page-footer">  
+  <div class="social-media">
+  <!-- Github logo -->
+  <a href="https://github.com/amrizjantan" target="_blank">
+  <img src="img/github_icon.svg" alt="github"></a>  
+  <!-- Twitter logo -->
+  <a href="https://twitter.com/AmrizJantan" target="_blank">
+  <img src="img/twitter_icon.svg" alt="twitter"></a>
+  <!-- LinkedIn logo -->
+  <a href="https://www.linkedin.com/in/amriz-jantan-4277a022b/" target="_blank">
+  <img src="img/linkedin_icon.svg" alt="linkedin"></a>
+  </div>
+</footer>
+
+
+<!-- JavaScript -->
+<script
+  src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="js/scripts.js"></script> 
+<script src="js/tota11y.min.js"></script> 
+</body>
+
+</html>
