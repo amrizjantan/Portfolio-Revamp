@@ -501,9 +501,9 @@ a.project-list__item-link {
 
   .project-list__item {
     background-color: var(--primary-color);
-    width: 100%;
+    width: 140%;
     height: auto;
-    max-width: 450px;
+    max-width: 370px;
     min-height: 310px;
     padding: 5px;
     margin: 0;
@@ -528,7 +528,7 @@ a.project-list__item-link {
     width: auto;
     height: auto;
     max-width: 351px;
-    max-height: 230px;
+    max-height: 350px;
   }
 }
 
@@ -558,7 +558,6 @@ a.project-list__item-link {
 
   .about-page {
     flex-direction: column;
-    justify-content: flex-start;
   }
 
   #about h1 {
