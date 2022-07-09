@@ -501,7 +501,7 @@ a.project-list__item-link {
 
   .project-list__item {
     background-color: var(--primary-color);
-    width: 140%;
+    width: 155%;
     height: auto;
     max-width: 370px;
     min-height: 310px;
