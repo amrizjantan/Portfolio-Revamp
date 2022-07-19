@@ -2,7 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: 
+* Browsers: last 4 version
 */
 
 :root {
@@ -15,7 +15,7 @@
   --accent-color: #4904e8;
   --primary-font-size: 18px;
   --h1-font-size: 40px;
-  --h1-font-size-mediaq: 22px;
+  --h1-font-size-media: 22px;
   --h2-font-size: 24px;
   --h3-font-size: 22px;
   --navigation-font-size: 20px;
@@ -43,6 +43,7 @@ html {
   top: 0;
   left: 0;
   background: var(--primary-color);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
@@ -70,7 +71,11 @@ html {
 }
 
 .hamburger-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
   justify-content: right;
 }
 
@@ -86,6 +91,9 @@ html {
   height: 3px;
   background-color: black;
   margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3 ease-in-out;
+  -o-transition: all 0.3 ease-in-out;
   transition: all 0.3 ease-in-out;
   display: block;
 }
@@ -94,6 +102,8 @@ html {
 
 /* Rotate the 1st bar 45 degrees */
 .menu-toggle:focus .bar:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(45deg);
+  -ms-transform: translateY(8px) rotate(45deg);
   transform: translateY(8px) rotate(45deg);
 }
 
@@ -104,12 +114,15 @@ html {
 
 /* Rotate the 3rd bar -45 deg */
 .menu-toggle:focus .bar:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  -ms-transform: translateY(-8px) rotate(-45deg);
   transform: translateY(-8px) rotate(-45deg);
 }
 
 /* Body */
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -173,14 +186,19 @@ h2 {
 h3 {
   font-size: var(--h3-font-size);
   font-weight: 400;
-  color: var(--secondary-color);
+  color: var(---color);
 }
 
 /* Page Footer */
 
 .page-footer {
   clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
   margin-bottom: 0;
@@ -204,6 +222,8 @@ h3 {
 .profile {
   max-width: 700px;
   margin: 240px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -228,15 +248,28 @@ h3 {
 
 #about {
   background-color: var(--tertiary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .about-page {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -272,11 +305,14 @@ button {
   background-color: var(--accent-color);
   color: var(--secondary-color);
   text-decoration: none;
+
   /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
   margin-bottom: 10px;
 }
@@ -286,6 +322,8 @@ button {
   display: inline-block;
   height: 45px;
   width: 150px;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
   border-radius: 6px;
 }
 
@@ -357,6 +395,8 @@ a.project-list__item-link {
   background: rgba(0, 0, 0, 0.8);
   z-index: 99999;
   opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -o-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in;
   pointer-events: none;
 }
@@ -367,13 +407,12 @@ a.project-list__item-link {
 }
 
 .modalDialog > div {
-  width: 700px;
+  width: 1150px;
   position: relative;
   margin: 10% auto;
   padding: 5px 20px 13px 20px;
   border-radius: 10px;
-  background: #fff;
-  background: -o-linear-gradient(#fcfbf1, #7b7b7b);
+  background: -webkit-linear-gradient(#5615ef, #be18ff);
 }
 
 .modal-pic {
@@ -394,8 +433,6 @@ a.project-list__item-link {
   width: 24px;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 12px;
-  box-shadow: 1px 1px 3px #000;
 }
 
 .close:hover {
@@ -409,14 +446,27 @@ a.project-list__item-link {
 #technologies {
   background-color: var(--tertiary-color);
   text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .technologies-page {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -427,14 +477,21 @@ a.project-list__item-link {
 }
 
 .technologies-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
   max-width: 400px;
   max-height: 640px;
   margin: auto;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
@@ -456,7 +513,11 @@ a.project-list__item-link {
 ****/
 
 #contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   min-height: 80vh !important;
 }
@@ -464,8 +525,15 @@ a.project-list__item-link {
 .contact-page {
   text-align: center;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -482,8 +550,10 @@ a.project-list__item-link {
 
 @supports (display: grid) {
   .project-list {
+    display: -ms-grid;
     display: grid;
     justify-items: center;
+    -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
     margin: 0;
@@ -506,6 +576,7 @@ a.project-list__item-link {
 
 @media all and (min-width: 750px) and (max-width: 1150px) {
   .project-list {
+    -ms-grid-columns: 1fr 40px 1fr;
     grid-template-columns: 1fr 1fr;
     margin-left: 40px;
     margin-right: 40px;
@@ -537,10 +608,19 @@ a.project-list__item-link {
   }
 
   .navigation-list.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-line-pack: end;
     align-content: flex-end;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
   }
 
@@ -549,6 +629,9 @@ a.project-list__item-link {
   }
 
   .about-page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -557,10 +640,14 @@ a.project-list__item-link {
   }
 
   .project-list {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 
   .contact-page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -589,8 +676,15 @@ a.project-list__item-link {
   }
 
   .profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -616,5 +710,13 @@ a.project-list__item-link {
   .project-list__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
+  }
+}
+
+@media all and (min-width: 750px) and (max-width: 1150px) {
+  .modalDialog {
+    text-align: center;
+    margin: auto;
+    line-height: 1.2;
   }
 }
