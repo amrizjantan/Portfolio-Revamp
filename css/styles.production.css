@@ -407,11 +407,12 @@ a.project-list__item-link {
 }
 
 .modalDialog > div {
-  width: 1150px;
   position: relative;
   margin: 10% auto;
-  padding: 5px 20px 13px 20px;
-  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 25px 20px 20px 25px;
+  border-radius: 5px;
   background: -webkit-linear-gradient(#5615ef, #be18ff);
 }
 
@@ -423,7 +424,7 @@ a.project-list__item-link {
 }
 
 .close {
-  background: var(--accent-color);
+  background: var(--secondary-color);
   color: #ffffff;
   line-height: 25px;
   position: absolute;
@@ -574,7 +575,7 @@ a.project-list__item-link {
 
 /* Media */
 
-@media all and (min-width: 750px) and (max-width: 1150px) {
+@media all and (min-width: 750px) and (max-width: 800px) {
   .project-list {
     -ms-grid-columns: 1fr 40px 1fr;
     grid-template-columns: 1fr 1fr;
@@ -713,10 +714,9 @@ a.project-list__item-link {
   }
 }
 
-@media all and (min-width: 750px) and (max-width: 1150px) {
+@media all and (min-width: 750px) and (max-width: 750px) {
   .modalDialog {
-    text-align: center;
-    margin: auto;
-    line-height: 1.2;
+    padding: 20px;
+    width: 80%;
   }
 }
