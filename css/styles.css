@@ -14,7 +14,7 @@
   --navigation-font-size: 20px;
   --navigation-active-font-size: 20px;
   --attribute-font-size: 8px;
-  --primary-font-weight: 400;
+  --primary-font-weight: 900;
   --secondary-font-weight: 700;
 }
 
@@ -249,12 +249,13 @@ h3 {
 
 .about-info {
   width: auto;
-  max-width: 520px;
+  max-width: 600px;
 }
 
 .about-info p {
   font-size: 16px;
   margin-bottom: 15px;
+  font-weight: 900;
 }
 
 .about-button:hover,
@@ -284,7 +285,7 @@ button {
 }
 
 .about-button {
-  font-weight: 500;
+  font-weight: 800;
   display: inline-flexbox;
   height: 45px;
   width: 150px;
@@ -314,7 +315,7 @@ button:focus,
 
 #projects h1 {
   font-size: 80px;
-  padding: 60px;
+  padding: 30px;
   text-align: center;
   color: var(--text-color-secondary);
 }
@@ -434,17 +435,15 @@ a.project-list__item-link {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
-  height: auto;
   max-width: 600px;
-  max-height: 640px;
+  max-height: 200px;
   margin: auto;
   justify-content: space-around;
 }
 
 .technologies-icons img {
   margin: 10px;
-  width: 100%;
+  width: auto;
   height: auto;
   max-width: 80px;
   max-height: 80px;
@@ -517,13 +516,13 @@ a.project-list__item-link {
 
   .contact-page h1 {
     margin-left: 250px;
-    font-size: 70px;
+    font-size: 80px;
   }
 
   .project-list__item img {
     width: auto;
     height: auto;
-    max-width: 351px;
+    max-width: 350px;
     max-height: 100px;
   }
 }
@@ -557,7 +556,7 @@ a.project-list__item-link {
   }
 
   #about h1 {
-    padding-top: 50px;
+    padding-top: 10px;
   }
 
   .project-list {
@@ -579,7 +578,14 @@ a.project-list__item-link {
   }
 
   .about-info {
-    padding: 10px;
+    padding: 5px;
+    padding-bottom: 80px;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .about-page h1 {
+    margin: 5px;
   }
 }
 
@@ -616,6 +622,12 @@ a.project-list__item-link {
 
   .project-list__item img {
     margin: 0;
+  }
+}
+
+@media all and (max-width: 1050px) {
+  #technologies {
+    min-height: 70vh;
   }
 }
 
