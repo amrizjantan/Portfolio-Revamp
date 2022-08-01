@@ -231,6 +231,7 @@ h3 {
   background-color: var(--tertiary-color);
   display: flex;
   justify-content: center;
+  min-height: 50vh;
 }
 
 .about-page {
@@ -416,6 +417,7 @@ a.project-list__item-link {
   text-align: center;
   justify-content: center;
   align-items: center;
+  min-height: 50vh;
 }
 .technologies-page {
   text-align: center;
@@ -445,8 +447,8 @@ a.project-list__item-link {
   margin: 10px;
   width: auto;
   height: auto;
-  max-width: 80px;
-  max-height: 80px;
+  max-width: 70px;
+  max-height: 70px;
 }
 
 /* .neo-attribute {
