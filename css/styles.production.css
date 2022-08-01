@@ -255,6 +255,7 @@ h3 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  min-height: 50vh;
 }
 
 .about-page {
@@ -455,6 +456,7 @@ a.project-list__item-link {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 50vh;
 }
 .technologies-page {
   text-align: center;
@@ -500,8 +502,8 @@ a.project-list__item-link {
   margin: 10px;
   width: auto;
   height: auto;
-  max-width: 80px;
-  max-height: 80px;
+  max-width: 70px;
+  max-height: 70px;
 }
 
 /* .neo-attribute {
@@ -722,6 +724,7 @@ a.project-list__item-link {
     min-height: 70vh;
   }
 }
+
 @media all and (max-width: 1150px) {
   .project-list__item:last-child {
     grid-column: auto / auto;
