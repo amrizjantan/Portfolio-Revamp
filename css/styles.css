@@ -630,6 +630,13 @@ a.project-list__item-link {
 @media all and (max-width: 1050px) {
   #technologies {
     min-height: 70vh;
+    padding: 10px;
+  }
+}
+
+@media all and (max-width: 1050px) {
+  #about {
+    padding: 10px;
   }
 }
 
